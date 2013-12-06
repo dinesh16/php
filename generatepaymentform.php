@@ -20,8 +20,8 @@
 	$skinCode 			= strip_tags($_GET['skinCodeInput']);
 	$merchantAccount 	= strip_tags($_GET['merchant']);
 		
-	//$orderData 			=  base64_encode("Various goods and services"); //wrong
-	$orderData			= ""; //no order data at this moment.
+	$orderData 		=  base64_encode(gzencode("Various goods")); //Compress orderData by gzencode en encode to base64
+
 		
 	
 	
